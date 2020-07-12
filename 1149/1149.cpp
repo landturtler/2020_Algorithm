@@ -24,7 +24,6 @@ int main() {
 
 	int n;
 	cin >> n;
-	int t;
 	vector<vector<int>>color(n+1,vector<int>(3));//color[num][col] : num번째 집을 col색으로 칠하는 비용
 	for(int i=1;i<=n;i++) {
 		for(int j=0;j<3;j++) {
