@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int go(int num, int col, vector<vector<int> > &color, vector<vector<int> > &v) {
+int go(int num, int col, vector<vector<int> > color, vector<vector<int> > &v) {
 	if(v[num][col] != INF) return v[num][col];
 	if (num == 0 ) return 0; 
 	v[num][col] = min(go(num-1,(col+1)%3,color,v),
