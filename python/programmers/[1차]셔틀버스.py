@@ -16,7 +16,7 @@ def solution(n, t, m, timetable):
         crews.append(int(hour) * 60 + int(minute))
     
     # 1. 데이터 정제 : 마지막 셔틀 이후 대기열에 서는 크루 제거
-    last_time = 9 * 60 + n * t # 가장 마지막 셔틀 시간 
+    last_time = 9 * 60 + (n-1) * t # 가장 마지막 셔틀 시간 
     last_index = bisect_right(crews,last_time)
     crews = crews[:last_index]
     
